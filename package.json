@@ -2,10 +2,14 @@
   "name": "youtube",
   "version": "1.0.0",
   "description": "test ",
-  "main": "youtube.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "ts-node src/index.ts",
     "dev:watch": "ts-node-dev --respawn src/index.ts",
+    "clean": "rimraf dist/*",
+    "tsc": "tsc",
+    "build": "npm-run-all clean tsc",
+    "start": "node .",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,6 +20,8 @@
   },
   "devDependencies": {
     "@types/node": "^12.7.5",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.0",
     "ts-node": "^8.4.1",
     "ts-node-dev": "^1.0.0-pre.42",
     "typescript": "^3.6.3"
