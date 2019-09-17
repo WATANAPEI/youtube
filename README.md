@@ -1,4 +1,4 @@
-#Usage
+# Usage
 NOTE: entrypoint is dist/index.ts
 
 ## npm dev
