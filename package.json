@@ -1,0 +1,19 @@
+{
+  "name": "youtube",
+  "version": "1.0.0",
+  "description": "test ",
+  "main": "youtube.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/request": "^2.48.3",
+    "request": "^2.88.0"
+  },
+  "devDependencies": {
+    "@types/node": "^12.7.5",
+    "typescript": "^3.6.3"
+  }
+}

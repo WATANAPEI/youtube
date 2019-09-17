@@ -1,0 +1,19 @@
+version: "3.7"
+services:
+  lang-frontend:
+      build: .
+      container_name: "lang-frontend"
+      volumes:
+          - type: volume
+            source: out_lang-frontend
+            target: /www/app/lang/words
+      networks:
+          - mynet
+
+volumes:
+    out_lang-frontend:
+        external: true
+
+networks:
+    mynet:
+        external: true
